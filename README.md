@@ -18,8 +18,8 @@ Automate test cases of https://automationexercise.com/
 # File structure destription
 - pages - contains page object classes representing pages of the application
 - tests - contains test cases
-- utils - contains utility classes
 - playwright.config.ts - contains configuration and properties of the project
+- global-setup.ts - contains global variables
 
 # Covered test cases
 - [ ] 1. Register user
