@@ -39,10 +39,9 @@ Automate test cases of https://automationexercise.com/
 10. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
 11. Click 'Create Account button'
 12. Verify that 'ACCOUNT CREATED!' is visible
-13. Click 'Continue' button
-14. Verify that 'Logged in as username' is visible
-15. Click 'Delete Account' button
-16. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
+13. Verify that 'Logged in as username' is visible
+14. Click 'Delete Account' button
+15. Verify that 'ACCOUNT DELETED!' is visible
 
 </details>
 
@@ -52,13 +51,11 @@ Automate test cases of https://automationexercise.com/
 <summary>Expand</summary>
 
 1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that home page is visible successfully
-4. Click on 'Signup / Login' button
-5. Verify 'New User Signup!' is visible
-6. Enter name and already registered email address
-7. Click 'Signup' button
-8. Verify error 'Email Address already exist!' is visible
+2. Navigate to url 'http://automationexercise.com/login'
+3. Verify 'New User Signup!' is visible
+4. Enter name and already registered email address
+5. Click 'Signup' button
+6. Verify error 'Email Address already exist!' is visible
 
 </details>
 
@@ -68,13 +65,12 @@ Automate test cases of https://automationexercise.com/
 <summary>Expand</summary>
 
 1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that home page is visible successfully
-4. Click on 'Signup / Login' button
-5. Verify 'Login to your account' is visible
-6. Enter correct email address and password
-7. Click 'login' button
-8. Verify that 'Logged in as Test' is visible
+2. Navigate to url 'http://automationexercise.com/login'
+3. Verify 'New User Signup!' is visible
+4. Verify 'Login to your account' is visible
+5. Enter correct email address and password
+6. Click 'login' button
+7. Verify that 'Logged in as Test' is visible
 
 </details>
 
@@ -84,13 +80,12 @@ Automate test cases of https://automationexercise.com/
 <summary>Expand</summary>
 
 1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that home page is visible successfully
-4. Click on 'Signup / Login' button
-5. Verify 'Login to your account' is visible
-6. Enter incorrect email address and password
-7. Click 'login' button
-8. Verify error 'Your email or password is incorrect!' is visible
+2. Navigate to url 'http://automationexercise.com/login'
+3. Verify 'New User Signup!' is visible
+4. Verify 'Login to your account' is visible
+5. Enter incorrect email address and password
+6. Click 'login' button
+7. Verify error 'Your email or password is incorrect!' is visible
 
 </details>
 
@@ -100,34 +95,28 @@ Automate test cases of https://automationexercise.com/
 <summary>Expand</summary>
 
 1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that home page is visible successfully
-4. Click on 'Signup / Login' button
-5. Verify 'Login to your account' is visible
-6. Enter correct email address and password
-7. Click 'login' button
-8. Verify that 'Logged in as username' is visible
-9. Click 'Logout' button
-10. Verify that user is navigated to login page
+2. Navigate to url 'http://automationexercise.com/login'
+3. Verify 'New User Signup!' is visible
+4. Enter correct email address and password
+5. Click 'login' button
+6. Verify that 'Logged in as username' is visible
+7. Click 'Logout' button
+8. Verify that user is logged out
 
 </details>
 
-- [ ] 6. Contact Us Form
+- [x] 6. Contact Us Form
 
 <details>
 <summary>Expand</summary>
 
 1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that home page is visible successfully
-4. Click on 'Contact Us' button
-5. Verify 'GET IN TOUCH' is visible
-6. Enter name, email, subject and message
-7. Upload file
-8. Click 'Submit' button
-9. Click OK button
-10. Verify success message 'Success! Your details have been submitted successfully.' is visible
-11. Click 'Home' button and verify that landed to home page successfully
+2. Navigate to url 'http://automationexercise.com/contact_us'
+3. Verify 'GET IN TOUCH' is visible
+4. Enter name, email, subject and message
+5. Click 'Submit' button
+6. Click OK button
+7. Verify success message 'Success! Your details have been submitted successfully.' is visible
 
 </details>
 
