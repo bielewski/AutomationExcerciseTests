@@ -9,7 +9,7 @@ Automate test cases of https://automationexercise.com/
 - [x] test execution configuration
 - [x] test execution logging
 - [x] test retries on failure
-- [] screenshots
+- [ ] screenshots
 
 # Used frameworks and technologies
 - Playwright
@@ -22,29 +22,27 @@ Automate test cases of https://automationexercise.com/
 - global-setup.ts - contains global variables
 
 # Covered test cases
-- [ ] 1. Register user
+- [x] 1. Register user
 
 <details>
 <summary>Expand</summary>
 
 1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that home page is visible successfully
-4. Click on 'Signup / Login' button
-5. Verify 'New User Signup!' is visible
-6. Enter name and email address
-7. Click 'Signup' button
-8. Verify that 'ENTER ACCOUNT INFORMATION' is visible
-9. Fill details: Title, Name, Email, Password, Date of birth
-10. Select checkbox 'Sign up for our newsletter!'
-11. Select checkbox 'Receive special offers from our partners!'
-12. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
-13. Click 'Create Account button'
-14. Verify that 'ACCOUNT CREATED!' is visible
-15. Click 'Continue' button
-16. Verify that 'Logged in as username' is visible
-17. Click 'Delete Account' button
-18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
+2. Navigate to url 'http://automationexercise.com/login'
+3. Verify 'New User Signup!' is visible
+4. Enter name and email address
+5. Click 'Signup' button
+6. Verify that 'ENTER ACCOUNT INFORMATION' is visible
+7. Fill details: Title, Name, Email, Password, Date of birth
+8. Select checkbox 'Sign up for our newsletter!'
+9. Select checkbox 'Receive special offers from our partners!'
+10. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
+11. Click 'Create Account button'
+12. Verify that 'ACCOUNT CREATED!' is visible
+13. Click 'Continue' button
+14. Verify that 'Logged in as username' is visible
+15. Click 'Delete Account' button
+16. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
 
 </details>
 
@@ -311,14 +309,11 @@ Automate test cases of https://automationexercise.com/
 <summary>Expand</summary>
 
 1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Click on 'Products' button
-4. Verify user is navigated to ALL PRODUCTS page successfully
-5. Click on 'View Product' button
-6. Verify 'Write Your Review' is visible
-7. Enter name, email and review
-8. Click 'Submit' button
-9. Verify success message 'Thank you for your review.'
+2. Navigate to url 'http://automationexercise.com/product_details/1'
+3. Verify 'Write Your Review' is visible
+4. Enter name, email and review
+5. Click 'Submit' button
+6. Verify success message 'Thank you for your review.'
 
 </details>
 

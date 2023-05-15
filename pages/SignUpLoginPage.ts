@@ -29,6 +29,10 @@ export class SignUpLoginPage {
     readonly ZipCodePlaceholder: Locator;
     readonly MobileNumberPlaceholder: Locator;
     readonly SubmitBtn: Locator;
+    readonly SuccessMessage: Locator;
+    readonly ContinueBtn: Locator;
+    readonly DeleteMessage: Locator;
+    readonly DeleteAccountLink: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -42,7 +46,7 @@ export class SignUpLoginPage {
         this.SignUpMailPlaceholder = page.locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address');
         this.SignUpFormHeader = page.getByRole('heading', { name: 'Enter Account Information' });
         this.ChooseFirstGender = page.getByRole('radio', { name: 'Mr.' });
-        this.PwdPlaceholder = page.getByPlaceholder('Password *');
+        this.PwdPlaceholder = page.getByLabel('Password *');
         this.DayPicker = page.locator('#days');
         this.MonthPicker = page.locator('#months');
         this.YearPicker = page.locator('#years');
@@ -59,10 +63,12 @@ export class SignUpLoginPage {
         this.ZipCodePlaceholder = page.locator('#zipcode');
         this.MobileNumberPlaceholder = page.getByLabel('Mobile Number *');
         this.SubmitBtn = page.getByRole('button', { name: 'Create Account' });
+        this.SuccessMessage = page.getByText('Account Created!');
+        this.DeleteMessage = page.getByText('Account Deleted!');
     }
 
     async goTo() {
-        await this.page.goto('/signup');
+        await this.page.goto('/login');
     }
 
     async loginMailSetter() {
