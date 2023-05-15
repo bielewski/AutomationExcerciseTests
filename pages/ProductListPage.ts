@@ -22,7 +22,7 @@ export class ProductListPage {
     }
 
     async goTo() {
-        await this.page.goto('/contact_us');
+        await this.page.goto('/products');
     }
 
     async chooseFirstProduct() {
