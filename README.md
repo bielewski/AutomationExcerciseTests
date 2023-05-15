@@ -46,7 +46,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 2. Register user with existing email
+- [x] 2. Register user with existing email
 
 <details>
 <summary>Expand</summary>
@@ -62,7 +62,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 3. Login user with correct email and password
+- [x] 3. Login user with correct email and password
 
 <details>
 <summary>Expand</summary>
@@ -74,9 +74,7 @@ Automate test cases of https://automationexercise.com/
 5. Verify 'Login to your account' is visible
 6. Enter correct email address and password
 7. Click 'login' button
-8. Verify that 'Logged in as username' is visible
-9. Click 'Delete Account' button
-10. Verify that 'ACCOUNT DELETED!' is visible
+8. Verify that 'Logged in as Test' is visible
 
 </details>
 
