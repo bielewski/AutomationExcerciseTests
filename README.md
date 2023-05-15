@@ -94,7 +94,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 5. Logout user
+- [x] 5. Logout user
 
 <details>
 <summary>Expand</summary>
