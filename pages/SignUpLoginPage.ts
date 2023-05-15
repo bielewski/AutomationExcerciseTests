@@ -33,6 +33,7 @@ export class SignUpLoginPage {
     readonly ContinueBtn: Locator;
     readonly DeleteMessage: Locator;
     readonly DeleteAccountLink: Locator;
+    readonly ExistingEmailMessage: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -65,6 +66,7 @@ export class SignUpLoginPage {
         this.SubmitBtn = page.getByRole('button', { name: 'Create Account' });
         this.SuccessMessage = page.getByText('Account Created!');
         this.DeleteMessage = page.getByText('Account Deleted!');
+        this.ExistingEmailMessage = page.getByText('Email Address already exist!');
     }
 
     async goTo() {
