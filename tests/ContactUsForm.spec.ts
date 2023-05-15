@@ -2,32 +2,34 @@ import { test, expect } from '@playwright/test';
 import { ContactUsPage } from '../pages/ContactUsPage';
 
 test.beforeEach(async ({ page }) => {
-    const CUPage = new ContactUsPage(page);
-    await CUPage.goTo();
+    const contactUsPage = new ContactUsPage(page);
+    await contactUsPage.goTo();
 });
 
 test('asserting visibility of Contact Us Form', async ({ page }) => {
-    const CUPage = new ContactUsPage(page);
-    await expect(CUPage.Header).toBeVisible();
+    const contactUsPage = new ContactUsPage(page);
+    await expect(contactUsPage.Header).toBeVisible();
 });
 
 test('sending message', async ({ page }) => {
-    const CUPage= new ContactUsPage(page);
+    const contactUsPage = new ContactUsPage(page);
     const { NAME, EMAIL, SUBJECT, MSG} = process.env;
-    await CUPage.nameSetter();
+    // fill the fields
+    await contactUsPage.nameSetter();
     await page.keyboard.type(NAME!);
-    await CUPage.mailSetter();
+    await contactUsPage.mailSetter();
     await page.keyboard.type(EMAIL!);
-    await CUPage.subjectSetter();
+    await contactUsPage.subjectSetter();
     await page.keyboard.type(SUBJECT!);
-    await CUPage.msgSetter();
+    await contactUsPage.msgSetter();
     await page.keyboard.type(MSG!);
     // dealing with dialog
-    await CUPage.sendBtnClick();
+    await contactUsPage.sendBtnClick();
     page.on('dialog', async dialog => {
         console.log(dialog.message());
         await dialog.accept();
         });
-    await CUPage.sendBtnClick();
-    await expect(CUPage.SuccessMsg).toBeVisible();
+    await contactUsPage.sendBtnClick();
+    // assert that the message was sent
+    await expect(contactUsPage.SuccessMsg).toBeVisible();
 });
