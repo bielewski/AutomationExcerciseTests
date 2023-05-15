@@ -16,6 +16,8 @@ async function globalSetup(config: FullConfig) {
     process.env.STATE = 'Alabama';
     process.env.ZIP = '12345';
     process.env.MOBILE = '123456789';
+    process.env.SUBJECT = 'Example Subject';
+    process.env.MSG = 'Example Message';
     }
 
 export default globalSetup;

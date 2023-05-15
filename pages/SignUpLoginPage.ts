@@ -36,6 +36,7 @@ export class SignUpLoginPage {
     readonly ExistingEmailMessage: Locator;
     readonly LoginConfirmation: Locator;
     readonly LoginFailedConfirmation: Locator;
+    readonly LogoutBtn: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -71,6 +72,7 @@ export class SignUpLoginPage {
         this.ExistingEmailMessage = page.getByText('Email Address already exist!');
         this.LoginConfirmation = page.getByText('Logged in as Test');
         this.LoginFailedConfirmation = page.getByText('Your email or password is incorrect!');
+        this.LogoutBtn = page.getByRole('link', { name: ' Logout' })
     }
 
     async goTo() {
