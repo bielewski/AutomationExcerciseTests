@@ -4,7 +4,7 @@
 Automate test cases of https://automationexercise.com/
 
 # Objectives of the project
-- [ ] Page Object Pattern usage
+- [x] Page Object Pattern usage
 - [ ] cross-browser testing
 - [ ] test execution configuration
 - [ ] test execution logging

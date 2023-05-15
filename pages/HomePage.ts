@@ -19,7 +19,7 @@ export class HomePage {
 
     async goTo() {
         await this.page.goto('/');
-      }
+    }
 
     async homeNav() {
         await this.HomeLink.click();
