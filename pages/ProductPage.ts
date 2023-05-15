@@ -13,6 +13,7 @@ export class ProductPage {
     readonly MailPlaceholder: Locator;
     readonly RevPlaceholder: Locator;
     readonly SubmitRevBtn: Locator;
+    readonly SuccessMsg: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -27,6 +28,7 @@ export class ProductPage {
         this.MailPlaceholder = page.getByPlaceholder('Email Address', { exact: true });
         this.RevPlaceholder = page.getByPlaceholder('Add Review Here!');
         this.SubmitRevBtn = page.getByRole('button', { name: 'Submit' });
+        this.SuccessMsg = page.getByText("Thank you for your review.");
     }
 
     async goTo() {

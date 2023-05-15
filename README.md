@@ -5,11 +5,11 @@ Automate test cases of https://automationexercise.com/
 
 # Objectives of the project
 - [x] Page Object Pattern usage
-- [ ] cross-browser testing
-- [ ] test execution configuration
-- [ ] test execution logging
-- [ ] test retries on failure
-- [ ] screenshots
+- [x] cross-browser testing
+- [x] test execution configuration
+- [x] test execution logging
+- [x] test retries on failure
+- [] screenshots
 
 # Used frameworks and technologies
 - Playwright
@@ -305,7 +305,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 16. Add review for product
+- [x] 16. Add review for product
 
 <details>
 <summary>Expand</summary>
