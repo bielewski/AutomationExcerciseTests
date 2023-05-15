@@ -120,20 +120,18 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 7. Verify All Products and product detail page
+- [x] 7. Verify All Products and product detail page
 
 <details>
 <summary>Expand</summary>
 
 1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that home page is visible successfully
-4. Click on 'Products' button
-5. Verify user is navigated to ALL PRODUCTS page successfully
-6. The products list is visible
-7. Click on 'View Product' of first product
-8. User is landed to product detail page
-9. Verify that detail detail is visible: product name, category, price, availability, condition, brand
+2. Navigate to url 'http://automationexercise.com/products'
+3. Verify user is navigated to ALL PRODUCTS page successfully
+4. The products list is visible
+5. Navigate to url 'http://automationexercise.com/product_details/1'
+6. User is landed to product detail page
+7. Verify that detail detail is visible: product name, category name, price, image, brand, availability, condition
 
 </details>
 
@@ -319,7 +317,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 18. Verify Scroll Up using 'Arrow' button and Scroll Down functionality
+- [x] 18. Verify Scroll Up using 'Arrow' button and Scroll Down functionality
 
 <details>
 <summary>Expand</summary>
@@ -328,9 +326,9 @@ Automate test cases of https://automationexercise.com/
 2. Navigate to url 'http://automationexercise.com'
 3. Verify that home page is visible successfully
 4. Scroll down page to bottom
-5. Verify 'SUBSCRIPTION' is visible
+5. Verify that arrow button is visible
 6. Click on arrow at bottom right side to move upward
-7. Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen
+7. Verify that arrow button is not visible
 
 </details>
 

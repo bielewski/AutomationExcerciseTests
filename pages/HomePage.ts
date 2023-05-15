@@ -7,6 +7,7 @@ export class HomePage {
     readonly CartLink: Locator;
     readonly SignUpLoginLink: Locator;
     readonly ContactUsLink: Locator;
+    readonly Arrow: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -15,6 +16,7 @@ export class HomePage {
         this.CartLink = page.getByRole('link', { name: ' Cart' });
         this.SignUpLoginLink = page.getByRole('link', { name: ' Signup / Login' });
         this.ContactUsLink = page.getByRole('link', { name: ' Contact us' });
+        this.Arrow = page.getByRole('link', { name: '' })
     }
 
     async goTo() {
