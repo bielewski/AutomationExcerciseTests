@@ -2,23 +2,29 @@ import { test, expect } from '@playwright/test';
 import { SignUpLoginPage } from '../pages/SignUpLoginPage';
 
 test.beforeEach(async ({ page }) => {
-    const SLPage = new SignUpLoginPage(page);
-    await SLPage.goTo();
+    const signUpLoginPage = new SignUpLoginPage(page);
+    await signUpLoginPage.goTo();
 });
 
 test('asserting visibility of the Sign Up / Login page', async ({ page }) => {
-    const SLPage = new SignUpLoginPage(page);
-    await expect(SLPage.LoginHeader).toBeVisible();
-    await expect(SLPage.SignUpHeader).toBeVisible();
+    const signUpLoginPage = new SignUpLoginPage(page);
+    await expect(signUpLoginPage.LoginHeader).toBeVisible();
+    await expect(signUpLoginPage.SignUpHeader).toBeVisible();
 });
 
 test('trying to register with existing mail', async ({ page }) => {
-    const SLPage = new SignUpLoginPage(page);
+    const signUpLoginPage = new SignUpLoginPage(page);
     const { NAME, EXISTING_EMAIL} = process.env;
-    await SLPage.signUpNameSetter();
+
+    // filling the fields
+    await signUpLoginPage.signUpNameSetter();
     await page.keyboard.type(NAME!);
-    await SLPage.signUpMailSetter();
+    await signUpLoginPage.signUpMailSetter();
     await page.keyboard.type(EXISTING_EMAIL!);
-    await SLPage.SignUpBtn.click();
-    await expect(SLPage.ExistingEmailMessage).toBeVisible();
+
+    // submitting the form
+    await signUpLoginPage.SignUpBtn.click();
+
+    // asserting registration failure
+    await expect(signUpLoginPage.ExistingEmailMessage).toBeVisible();
 });
