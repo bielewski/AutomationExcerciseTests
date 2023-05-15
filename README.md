@@ -78,7 +78,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 4. Login User with incorrect email and password
+- [x] 4. Login User with incorrect email and password
 
 <details>
 <summary>Expand</summary>
