@@ -166,6 +166,7 @@ Automate test cases of https://automationexercise.com/
 9. Verify both products are added to Cart
 10. Verify their prices, quantity and total price
 
+</details>
 
 - [ ] 10. Place order
 
