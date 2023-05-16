@@ -14,7 +14,7 @@ test('asserting visibility of the Sign Up / Login page', async ({ page }) => {
 
 test('login then logout', async ({ page }) => {
     const signUpLoginPage = new SignUpLoginPage(page);
-    const { CORRECT_EMAIL, CORRECT_PASSWORD} = process.env;
+    const { CORRECT_EMAIL, CORRECT_PASSWORD } = process.env;
 
     // filling the fields
     await signUpLoginPage.loginMailSetter();

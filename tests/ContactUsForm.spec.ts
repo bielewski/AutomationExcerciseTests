@@ -13,7 +13,7 @@ test('asserting visibility of Contact Us Form', async ({ page }) => {
 
 test('sending message', async ({ page }) => {
     const contactUsPage = new ContactUsPage(page);
-    const { NAME, EMAIL, SUBJECT, MSG} = process.env;
+    const { NAME, EMAIL, SUBJECT, MSG } = process.env;
     // fill the fields
     await contactUsPage.nameSetter();
     await page.keyboard.type(NAME!);

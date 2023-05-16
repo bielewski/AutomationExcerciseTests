@@ -14,7 +14,7 @@ test('asserting visibility of the Sign Up / Login page', async ({ page }) => {
 
 test('asserting visibility of Sign Up page', async ({ page }) => {
     const signUpLoginPage = new SignUpLoginPage(page);
-    const { NAME, EMAIL} = process.env;
+    const { NAME, EMAIL } = process.env;
     await signUpLoginPage.signUpNameSetter();
     await page.keyboard.type(NAME!);
     await signUpLoginPage.signUpMailSetter();
@@ -25,7 +25,7 @@ test('asserting visibility of Sign Up page', async ({ page }) => {
 
 test('User Registration', async ({ page }) => {
     const signUpLoginPage = new SignUpLoginPage(page);
-    const { NAME, EMAIL, PASSWORD, LAST_NAME, COMPANY, ADDRESS, ADDRESS2, CITY, STATE, ZIP, MOBILE} = process.env;
+    const { NAME, EMAIL, PASSWORD, LAST_NAME, COMPANY, ADDRESS, ADDRESS2, CITY, STATE, ZIP, MOBILE } = process.env;
     
     // filling the fields
     await signUpLoginPage.signUpNameSetter();

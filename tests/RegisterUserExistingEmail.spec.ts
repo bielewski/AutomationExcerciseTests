@@ -14,7 +14,7 @@ test('asserting visibility of the Sign Up / Login page', async ({ page }) => {
 
 test('trying to register with existing mail', async ({ page }) => {
     const signUpLoginPage = new SignUpLoginPage(page);
-    const { NAME, EXISTING_EMAIL} = process.env;
+    const { NAME, EXISTING_EMAIL } = process.env;
 
     // filling the fields
     await signUpLoginPage.signUpNameSetter();
