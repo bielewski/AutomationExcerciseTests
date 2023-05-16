@@ -151,15 +151,14 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 9. Add products to cart
+- [x] 9. Add products to cart
 
 <details>
 <summary>Expand</summary>
 
 1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that home page is visible successfully
-4. Click 'Products' button
+2. Navigate to url 'http://automationexercise.com/products'
+3. Verify that products list page is visible
 5. Hover over first product and click 'Add to cart'
 6. Click 'Continue Shopping' button
 7. Hover over second product and click 'Add to cart'

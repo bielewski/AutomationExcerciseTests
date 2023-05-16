@@ -9,6 +9,9 @@ export class ProductListPage {
     readonly AddToCart: Locator;
     readonly GoToCart: Locator;
     readonly StayHere: Locator;
+    readonly AddToCartSecond: Locator;
+    readonly ContinueShopping: Locator;
+    readonly ViewCart: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -16,9 +19,12 @@ export class ProductListPage {
         this.AllProductsHeader = page.getByRole('heading', { name: 'All Products' });
         this.BrandHeader = page.getByRole('heading', { name: 'Brands' });
         this.ChooseFirstProduct = page.locator('.choose > .nav > li > a').first();
-        this.AddToCart = page.locator('.overlay-content > .btn').first();
+        this.AddToCart = page.locator('div:nth-child(3) > .product-image-wrapper > .single-products > .productinfo > .btn');
         this.GoToCart = page.getByRole('link', { name: 'View Cart' });
         this.StayHere = page.getByRole('button', { name: 'Continue Shopping' });
+        this.AddToCartSecond = page.locator('div:nth-child(4) > .product-image-wrapper > .single-products > .productinfo > .btn');
+        this.ContinueShopping = page.getByRole('button', { name: 'Continue Shopping' });
+        this.ViewCart = page.getByRole('link', { name: 'View Cart' });
     }
 
     async goTo() {
@@ -30,7 +36,7 @@ export class ProductListPage {
     }
 
     async addToCart() {
-        await this.AddToCart.click();
+        await this.AddToCart.first().click();
     }
 
     async goToCart() {
@@ -39,5 +45,9 @@ export class ProductListPage {
 
     async stayHere() {
         await this.StayHere.click();
+    }
+
+    async addToCartSecond() {
+        await this.AddToCartSecond.click();
     }
 }
