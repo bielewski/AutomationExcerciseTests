@@ -166,26 +166,8 @@ Automate test cases of https://automationexercise.com/
 9. Verify both products are added to Cart
 10. Verify their prices, quantity and total price
 
-</details>
 
-- [ ] 10. Verify product quantity in Cart
-
-<details>
-<summary>Expand</summary>
-
-1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that home page is visible successfully
-4. Click 'View Product' for any product on home page
-5. Verify product detail is opened
-6. Increase quantity to 4
-7. Click 'Add to cart' button
-8. Click 'View Cart' button
-9. Verify that product is displayed in cart page with exact quantity
-
-</details>
-
-- [ ] 11. Place order
+- [ ] 10. Place order
 
 <details>
 <summary>Expand</summary>
@@ -211,7 +193,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 12. Place order: Register while checkout
+- [ ] 11. Place order: Register while checkout
 
 <details>
 <summary>Expand</summary>
@@ -239,7 +221,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 13. Remove product from cart
+- [ ] 12. Remove product from cart
 
 <details>
 <summary>Expand</summary>
@@ -255,7 +237,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 14. View category page
+- [ ] 13. View category page
 
 <details>
 <summary>Expand</summary>
@@ -271,7 +253,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 15. View brand page
+- [ ] 14. View brand page
 
 <details>
 <summary>Expand</summary>
@@ -287,7 +269,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [x] 16. Add review for product
+- [x] 15. Add review for product
 
 <details>
 <summary>Expand</summary>
@@ -301,7 +283,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 17. Add to cart from Recommended Items
+- [ ] 16. Add to cart from Recommended Items
 
 <details>
 <summary>Expand</summary>
@@ -316,7 +298,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [x] 18. Verify Scroll Up using 'Arrow' button and Scroll Down functionality
+- [x] 17. Verify Scroll Up using 'Arrow' button and Scroll Down functionality
 
 <details>
 <summary>Expand</summary>
