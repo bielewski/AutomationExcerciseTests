@@ -14,7 +14,7 @@ test('asserting visibility of the Sign Up / Login page', async ({ page }) => {
 
 test('trying to login - failed', async ({ page }) => {
     const signUpLoginPage = new SignUpLoginPage(page);
-    const { EMAIL, PASSWORD} = process.env;
+    const { EMAIL, PASSWORD } = process.env;
 
     // filling the form
     await signUpLoginPage.loginMailSetter();

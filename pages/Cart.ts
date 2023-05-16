@@ -6,6 +6,8 @@ export class Cart {
     readonly ProductsLink: Locator;
     readonly CheckoutLink: Locator;
     readonly DeleteItems: Locator;
+    readonly FirstItem: Locator;
+    readonly SecondItem: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -13,6 +15,9 @@ export class Cart {
         this.ProductsLink = page.getByRole("link", { name: "here" });
         this.CheckoutLink = page.getByText("Proceed To Checkout");
         this.DeleteItems = page.getByRole("cell", { name: "" });
+        // I'm aware of the fact that this is not the best way to locate the items, but I couldn't find a better way
+        this.FirstItem = page.getByRole('row', { name: 'Product Image Blue Top Women > Tops Rs. 500 1 Rs. 500 ' })
+        this.SecondItem = page.getByRole('row', { name: 'Product Image Men Tshirt Men > Tshirts Rs. 400 1 Rs. 400 ' });
     }
 
     async goTo() {

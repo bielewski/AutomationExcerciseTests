@@ -13,7 +13,6 @@ test('asserting visibility after arrow is used', async ({ page }) => {
 
     // dealing with annoying ad
     await page.locator('.grippy-host').click();
-    await page.locator('.grippy-host').click();
 
     // click on arrow
     await homePage.Arrow.click();
