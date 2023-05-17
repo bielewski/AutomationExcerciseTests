@@ -199,19 +199,16 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 12. View category page
+- [X] 12. View category page
 
 <details>
 <summary>Expand</summary>
 
 1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that categories are visible on left side bar
-4. Click on 'Women' category
-5. Click on any category link under 'Women' category, for example: Dress
-6. Verify that category page is displayed and confirm text 'WOMEN - TOPS PRODUCTS'
-7. On left side bar, click on any sub-category link of 'Men' category
-8. Verify that user is navigated to that category page
+2. Navigate to url 'https://automationexercise.com/category_products/1'
+3. Verify that category page is displayed and confirm text 'WOMEN - DRESS PRODUCTS'
+4. On left side bar, click on any sub-category link of 'Men' category
+5. Verify that user is navigated to that category page
 
 </details>
 
