@@ -191,19 +191,18 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 11. Remove product from cart
+- [x] 11. Remove product from cart
 
 <details>
 <summary>Expand</summary>
 
 1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that home page is visible successfully
-4. Add products to cart
-5. Click 'Cart' button
-6. Verify that cart page is displayed
-7. Click 'X' button corresponding to particular product
-8. Verify that product is removed from the cart
+2. Navigate to url 'http://automationexercise.com/products'
+3. Add products to cart
+4. Click 'Cart' button
+5. Verify that cart page is displayed
+6. Click 'X' button corresponding to particular product
+7. Verify that product is removed from the cart
 
 </details>
 
