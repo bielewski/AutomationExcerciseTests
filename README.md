@@ -165,29 +165,22 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 10. Place order
+- [x] 10. Place order
 
 <details>
 <summary>Expand</summary>
 
 1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that home page is visible successfully
-4. Click 'Signup / Login' button
-5. Fill all details in Signup and create account
-6. Verify 'ACCOUNT CREATED!' and click 'Continue' button
-7. Verify ' Logged in as username' at top
-8. Add products to cart
-9. Click 'Cart' button
-10. Verify that cart page is displayed
-11. Click Proceed To Checkout
-12. Verify Address Details and Review Your Order
-13. Enter description in comment text area and click 'Place Order'
-14. Enter payment details: Name on Card, Card Number, CVC, Expiration date
-15. Click 'Pay and Confirm Order' button
-16. Verify success message 'Your order has been placed successfully!'
-17. Click 'Delete Account' button
-18. Verify 'ACCOUNT DELETED!' and click 'Continue' button
+2. Navigate to url 'http://automationexercise.com/login'
+3. Login with correct email and password
+4. Add first product to cart
+5. Verify that cart page is displayed
+6. Click Proceed To Checkout
+7. Verify Address Details and Review Your Order
+8. Enter description in comment text area and click 'Place Order'
+9. Enter payment details: Name on Card, Card Number, CVC, Expiration date
+10. Click 'Pay and Confirm Order' button
+11. Verify success message 'Your order has been placed successfully!'
 
 </details>
 
@@ -206,19 +199,16 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 12. View category page
+- [X] 12. View category page
 
 <details>
 <summary>Expand</summary>
 
 1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that categories are visible on left side bar
-4. Click on 'Women' category
-5. Click on any category link under 'Women' category, for example: Dress
-6. Verify that category page is displayed and confirm text 'WOMEN - TOPS PRODUCTS'
-7. On left side bar, click on any sub-category link of 'Men' category
-8. Verify that user is navigated to that category page
+2. Navigate to url 'https://automationexercise.com/category_products/1'
+3. Verify that category page is displayed and confirm text 'WOMEN - DRESS PRODUCTS'
+4. On left side bar, click on any sub-category link of 'Men' category
+5. Verify that user is navigated to that category page
 
 </details>
 

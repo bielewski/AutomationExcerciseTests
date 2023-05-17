@@ -14,6 +14,10 @@ export class ProductListPage {
     readonly ViewCart: Locator;
     readonly Search: Locator;
     readonly SearchHeader: Locator;
+    readonly WomanFirstSubcatHeader: Locator;
+    readonly ManCatHeader: Locator;
+    readonly SubcatMen: Locator;
+    readonly ManFirstSubcatHeader: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -29,6 +33,10 @@ export class ProductListPage {
         this.ViewCart = page.getByRole('link', { name: 'View Cart' });
         this.Search = page.getByPlaceholder('Search Product');
         this.SearchHeader = page.getByRole('heading', { name: 'Searched Products' });
+        this.WomanFirstSubcatHeader = page.getByRole('heading', { name: 'Women - Dress Products' })
+        this.ManCatHeader = page.getByRole('link', { name: ' Men' });
+        this.SubcatMen = page.getByRole('link', { name: 'Tshirts' });
+        this.ManFirstSubcatHeader = page.getByRole('heading', { name: 'Men - Tshirts Products' })
     }
 
     async goTo() {
@@ -59,5 +67,10 @@ export class ProductListPage {
         await this.Search.fill(searchTerm);
         await this.page.getByRole('button', { name: '' }).click();
         await expect(this.page.getByText(searchTerm).nth(1)).toBeVisible();
+    }
+
+    async goToManFirstSubcat() {
+        await this.ManCatHeader.click();
+        await this.SubcatMen.click();
     }
 }
