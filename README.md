@@ -135,19 +135,16 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 8. Search product
+- [x] 8. Search product
 
 <details>
 <summary>Expand</summary>
 
 1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that home page is visible successfully
-4. Click on 'Products' button
-5. Verify user is navigated to ALL PRODUCTS page successfully
-6. Enter product name in search input and click search button
-7. Verify 'SEARCHED PRODUCTS' is visible
-8. Verify all the products related to search are visible
+2. Navigate to url 'http://automationexercise.com/products'
+3. Enter product name in search input and click search button
+4. Verify 'SEARCHED PRODUCTS' is visible
+5. Verify all the products related to search are visible
 
 </details>
 
@@ -194,35 +191,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 11. Place order: Register while checkout
-
-<details>
-<summary>Expand</summary>
-
-1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Verify that home page is visible successfully
-4. Add products to cart
-5. Click 'Cart' button
-6. Verify that cart page is displayed
-7. Click Proceed To Checkout
-8. Click 'Register / Login' button
-9. Fill all details in Signup and create account
-10. Verify 'ACCOUNT CREATED!' and click 'Continue' button
-11. Verify ' Logged in as username' at top
-12. Click 'Cart' button
-13. Click 'Proceed To Checkout' button
-14. Verify Address Details and Review Your Order
-15. Enter description in comment text area and click 'Place Order'
-16. Enter payment details: Name on Card, Card Number, CVC, Expiration date
-17. Click 'Pay and Confirm Order' button
-18. Verify success message 'Your order has been placed successfully!'
-19. Click 'Delete Account' button
-20. Verify 'ACCOUNT DELETED!' and click 'Continue' button
-
-</details>
-
-- [ ] 12. Remove product from cart
+- [ ] 11. Remove product from cart
 
 <details>
 <summary>Expand</summary>
@@ -238,7 +207,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 13. View category page
+- [ ] 12. View category page
 
 <details>
 <summary>Expand</summary>
@@ -254,7 +223,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 14. View brand page
+- [ ] 13. View brand page
 
 <details>
 <summary>Expand</summary>
@@ -270,7 +239,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [x] 15. Add review for product
+- [x] 14. Add review for product
 
 <details>
 <summary>Expand</summary>
@@ -284,22 +253,7 @@ Automate test cases of https://automationexercise.com/
 
 </details>
 
-- [ ] 16. Add to cart from Recommended Items
-
-<details>
-<summary>Expand</summary>
-
-1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Scroll to bottom of page
-4. Verify 'RECOMMENDED ITEMS' are visible
-5. Click on 'Add To Cart' on Recommended product
-6. Click on 'View Cart' button
-7. Verify that product is displayed in cart page
-
-</details>
-
-- [x] 17. Verify Scroll Up using 'Arrow' button and Scroll Down functionality
+- [x] 15. Verify Scroll Up using 'Arrow' button and Scroll Down functionality
 
 <details>
 <summary>Expand</summary>
