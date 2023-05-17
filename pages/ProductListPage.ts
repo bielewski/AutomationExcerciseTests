@@ -12,6 +12,8 @@ export class ProductListPage {
     readonly AddToCartSecond: Locator;
     readonly ContinueShopping: Locator;
     readonly ViewCart: Locator;
+    readonly Search: Locator;
+    readonly SearchHeader: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -25,6 +27,8 @@ export class ProductListPage {
         this.AddToCartSecond = page.locator('div:nth-child(4) > .product-image-wrapper > .single-products > .productinfo > .btn');
         this.ContinueShopping = page.getByRole('button', { name: 'Continue Shopping' });
         this.ViewCart = page.getByRole('link', { name: 'View Cart' });
+        this.Search = page.getByPlaceholder('Search Product');
+        this.SearchHeader = page.getByRole('heading', { name: 'Searched Products' });
     }
 
     async goTo() {
@@ -49,5 +53,11 @@ export class ProductListPage {
 
     async addToCartSecond() {
         await this.AddToCartSecond.click();
+    }
+
+    async searchFor(searchTerm: string) {
+        await this.Search.fill(searchTerm);
+        await this.page.getByRole('button', { name: '' }).click();
+        await expect(this.page.getByText(searchTerm).nth(1)).toBeVisible();
     }
 }
