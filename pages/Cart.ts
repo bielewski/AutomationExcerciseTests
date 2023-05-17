@@ -5,7 +5,7 @@ export class Cart {
     readonly EmptyCart: Locator;
     readonly ProductsLink: Locator;
     readonly CheckoutLink: Locator;
-    readonly DeleteItems: Locator;
+    readonly DeleteItem: Locator;
     readonly FirstItem: Locator;
     readonly SecondItem: Locator;
 
@@ -14,7 +14,7 @@ export class Cart {
         this.EmptyCart = page.getByText("Cart is empty!");
         this.ProductsLink = page.getByRole("link", { name: "here" });
         this.CheckoutLink = page.getByText("Proceed To Checkout");
-        this.DeleteItems = page.getByRole("cell", { name: "" });
+        this.DeleteItem = page.getByRole('cell', { name: '' }).locator('a');
         // I'm aware of the fact that this is not the best way to locate the items, but I couldn't find a better way
         this.FirstItem = page.getByRole('row', { name: 'Product Image Blue Top Women > Tops Rs. 500 1 Rs. 500 ' })
         this.SecondItem = page.getByRole('row', { name: 'Product Image Men Tshirt Men > Tshirts Rs. 400 1 Rs. 400 ' });
@@ -32,7 +32,7 @@ export class Cart {
         await this.CheckoutLink.click();
     }
 
-    async deleteItems() {
-        await this.DeleteItems.click();
+    async deleteItem() {
+        await this.DeleteItem.click();
     }
 }
