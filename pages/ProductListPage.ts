@@ -18,6 +18,8 @@ export class ProductListPage {
     readonly ManCatHeader: Locator;
     readonly SubcatMen: Locator;
     readonly ManFirstSubcatHeader: Locator;
+    readonly FirstBrand: Locator;
+    readonly FirstBrandHeader: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -37,6 +39,8 @@ export class ProductListPage {
         this.ManCatHeader = page.getByRole('link', { name: ' Men' });
         this.SubcatMen = page.getByRole('link', { name: 'Tshirts' });
         this.ManFirstSubcatHeader = page.getByRole('heading', { name: 'Men - Tshirts Products' })
+        this.FirstBrand = page.getByRole('link', { name: 'Polo' });
+        this.FirstBrandHeader = page.getByRole('heading', { name: 'Brand - Polo Products' });
     }
 
     async goTo() {
@@ -72,5 +76,9 @@ export class ProductListPage {
     async goToManFirstSubcat() {
         await this.ManCatHeader.click();
         await this.SubcatMen.click();
+    }
+
+    async goToFirstBrand() {
+        await this.FirstBrand.click();
     }
 }
