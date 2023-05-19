@@ -20,6 +20,7 @@ Automate test cases of https://automationexercise.com/
 - tests - contains test cases
 - playwright.config.ts - contains configuration and properties of the project
 - global-setup.ts - contains global variables
+- playwright-report - dir contains example test (from test cases) execution report
 
 # Covered test cases
 - [x] 1. Register user
@@ -255,5 +256,5 @@ Automate test cases of https://automationexercise.com/
 </details>
 
 # What's next?
-- [ ] creating users accounts through API
-- [ ] deleting users accounts through API
+- [x] creating users accounts through API
+- [x] deleting users accounts through API
